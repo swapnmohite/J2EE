@@ -1,0 +1,12 @@
+127.0.0.1 - - [22/Aug/2023:13:28:50 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [22/Aug/2023:13:28:52 +0530] "GET /servlet/SaveStudent.html HTTP/1.1" 200 808
+127.0.0.1 - - [22/Aug/2023:13:28:53 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [22/Aug/2023:13:29:19 +0530] "GET /servlet/SaveStudent.html HTTP/1.1" 200 816
+127.0.0.1 - - [22/Aug/2023:13:29:34 +0530] "POST /servlet/save HTTP/1.1" 200 131
+127.0.0.1 - - [22/Aug/2023:13:32:11 +0530] "GET /servlet/SaveStudent.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Aug/2023:13:32:23 +0530] "POST /servlet/save HTTP/1.1" 200 104
+127.0.0.1 - - [22/Aug/2023:13:36:22 +0530] "POST /servlet/save HTTP/1.1" 200 99
+127.0.0.1 - - [22/Aug/2023:13:36:52 +0530] "POST /servlet/save HTTP/1.1" 200 107
+127.0.0.1 - - [22/Aug/2023:13:37:34 +0530] "POST /servlet/save HTTP/1.1" 200 107
+127.0.0.1 - - [22/Aug/2023:13:37:38 +0530] "POST /servlet/save HTTP/1.1" 200 122
+127.0.0.1 - - [22/Aug/2023:13:38:02 +0530] "POST /servlet/save HTTP/1.1" 200 149
