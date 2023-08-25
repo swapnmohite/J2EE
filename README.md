@@ -1,4 +1,3 @@
-# WEJA2-J2EE
 # J2EE GitHub Repository 
 
 
