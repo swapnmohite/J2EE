@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Fileexists {
 
 	public static void main(String[] args) {
-		File file = new File("D:/Eclipse/FileHandling/Peth.txt");
+		File file = new File("D:/WEJA2/FileHandling/Peth.txt");
 		if (file.exists()) {
 			System.out.println("File is already exists");
 		} else {

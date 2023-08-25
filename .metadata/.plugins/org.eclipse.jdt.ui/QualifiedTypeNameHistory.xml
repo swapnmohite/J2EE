@@ -12,4 +12,10 @@
     <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="java.lang.module.ResolutionException"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.jspider.Filehandling.operations.Fileexists"/>
+    <fullyQualifiedTypeName name="com.jspider.Filehandling.operations.DeleteFile"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.jspiders.hibernate1.dto.Aadharcard"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 </qualifiedTypeNameHistroy>

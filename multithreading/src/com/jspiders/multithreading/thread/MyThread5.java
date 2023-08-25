@@ -4,12 +4,12 @@ public class MyThread5 extends Thread {
 
 	@Override
 	public void run() {
-		for(int i = 1; i <= 5; i++) {
+		for (int i = 1; i <= 5; i++) {
 			if (i == 3) {
-				stop();
+				stop(); // deprecated method
 			}
 			System.out.println(getName() + " is now running");
 		}
 	}
-	
+
 }

@@ -9,12 +9,12 @@ import java.util.Properties;
 
 public class DynamicSelect {
 	private static Connection connection;
-	private static PreparedStatement preparedStatement;
-	private static ResultSet resultSet;
-	private static Properties properties = new Properties();
 	private static FileInputStream file;
 	private static String filepath = "D:\\Eclipse\\jdbc\\resources\\db_info.properties";
+	private static PreparedStatement preparedStatement;
+	private static Properties properties = new Properties();
 	private static String query;
+	private static ResultSet resultSet;
 
 	public static void main(String[] args) {
 		try {

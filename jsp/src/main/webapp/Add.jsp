@@ -15,5 +15,5 @@
 	<h1>Sum of <%= num1 %> and <%=num2 %> = <%=sum %></h1>
 </body>
 </html>
- <%-- <jsp:include page="Sub.jsp"></jsp:include>  --%>
- <jsp:forward page="Sub.jsp"></jsp:forward>
+ <jsp:include page="Sub.jsp"></jsp:include>  
+  <%-- <jsp:forward page="Sub.jsp"></jsp:forward>  --%>

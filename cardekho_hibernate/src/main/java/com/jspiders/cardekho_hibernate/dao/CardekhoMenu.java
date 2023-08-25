@@ -7,6 +7,44 @@ import com.jspiders.cardekho_hibernate.dto.Car;
 
 public class CardekhoMenu {
 
+	private static void displayAllCars(List<Car> cars) {
+		System.out.println("========All Cars========");
+		for (Car car : cars) {
+			System.out.println(car);
+		}
+	}
+
+	private static void displayMenu() {
+		System.out.println("===========MENU==========");
+		System.out.println("1. Add Car Details");
+		System.out.println("2. Remove Car Details");
+		System.out.println("3. Search Car By Name");
+		System.out.println("4. Search Car By Brand");
+		System.out.println("5. Search Car By Fuel Type");
+		System.out.println("6. Get  All Cars Details");
+		System.out.println("7. Edit Car Details");
+		System.out.println("8. Exit");
+		System.out.print("\nEnter your choice : ");
+	}
+
+	private static Car gatherCarDetails(Scanner scanner) {
+		Car car = new Car();
+		scanner.nextLine(); // Consume newline
+		System.out.print("Enter car name: ");
+		car.setName(scanner.nextLine());
+
+		System.out.print("Enter car brand: ");
+		car.setBrand(scanner.nextLine());
+
+		System.out.print("Enter fuel type: ");
+		car.setFuel_type(scanner.nextLine());
+
+		System.out.print("Enter car price: ");
+		car.setPrice(scanner.nextDouble());
+
+		return car;
+	}
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		CarOperation operation = new CarOperation();
@@ -80,44 +118,6 @@ public class CardekhoMenu {
 				System.out.println("\nInvalid choice. Try again..!!");
 				break;
 			}
-		}
-	}
-
-	private static void displayMenu() {
-		System.out.println("===========MENU==========");
-		System.out.println("1. Add Car Details");
-		System.out.println("2. Remove Car Details");
-		System.out.println("3. Search Car By Name");
-		System.out.println("4. Search Car By Brand");
-		System.out.println("5. Search Car By Fuel Type");
-		System.out.println("6. Search All Cars");
-		System.out.println("7. Edit Car Details");
-		System.out.println("8. Exit");
-		System.out.print("\nEnter your choice : ");
-	}
-
-	private static Car gatherCarDetails(Scanner scanner) {
-		Car car = new Car();
-		scanner.nextLine(); // Consume newline
-		System.out.print("Enter car name: ");
-		car.setName(scanner.nextLine());
-
-		System.out.print("Enter car brand: ");
-		car.setBrand(scanner.nextLine());
-
-		System.out.print("Enter fuel type: ");
-		car.setFuel_type(scanner.nextLine());
-
-		System.out.print("Enter car price: ");
-		car.setPrice(scanner.nextDouble());
-
-		return car;
-	}
-
-	private static void displayAllCars(List<Car> cars) {
-		System.out.println("========All Cars========");
-		for (Car car : cars) {
-			System.out.println(car);
 		}
 	}
 }

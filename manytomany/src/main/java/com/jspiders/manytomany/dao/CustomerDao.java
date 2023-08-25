@@ -68,7 +68,7 @@ public class CustomerDao {
 
 		List<Customer> customers2 = new ArrayList<>();
 		customers2.add(customer1);
-		customers1.add(customer2);
+		customers2.add(customer2);
 
 		List<Product> products1 = new ArrayList<>();
 		products1.add(product2);

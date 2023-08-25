@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class CreateFileDemo2 {
 	public static void main(String[] args) {
-		File file = new File("D:/Eclipse/FileHandling/Peth.txt");
+		File file = new File("D:/WEJA2/FileHandling/Peth.txt");
 
 		try {
 			file.createNewFile();
