@@ -1,5 +1,6 @@
 # WEJA2-J2EE
 # J2EE GitHub Repository 
+            ©️Swapnil Mohite
 
 Welcome to the J2EE GitHub repository for the `.metadata` project! This repository contains various Java EE projects and code examples related to different concepts in Java Enterprise Edition (J2EE). Each project focuses on a specific topic and aims to provide a clear understanding of the concepts covered.
 
