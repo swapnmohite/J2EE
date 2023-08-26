@@ -2,6 +2,7 @@ package com.jspiders.multithreading.thread;
 
 public class MyThread5 extends Thread {
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void run() {
 		for (int i = 1; i <= 5; i++) {

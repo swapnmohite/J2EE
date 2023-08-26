@@ -17,12 +17,6 @@ public class CompanyDAO {
 	private static EntityManager entityManager;
 	private static EntityTransaction entityTransaction;
 
-	private static void openconnection() {
-		entityManagerFactory = Persistence.createEntityManagerFactory("company");
-		entityManager = entityManagerFactory.createEntityManager();
-		entityTransaction = entityManager.getTransaction();
-	}
-
 	private static void closeConnection() {
 		if (entityTransaction != null) {
 			if (entityTransaction.isActive()) {
@@ -81,6 +75,12 @@ public class CompanyDAO {
 
 		entityTransaction.commit();
 		closeConnection();
+	}
+
+	private static void openconnection() {
+		entityManagerFactory = Persistence.createEntityManagerFactory("company");
+		entityManager = entityManagerFactory.createEntityManager();
+		entityTransaction = entityManager.getTransaction();
 	}
 
 }

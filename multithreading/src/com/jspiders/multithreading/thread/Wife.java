@@ -3,7 +3,6 @@ package com.jspiders.multithreading.thread;
 import com.jspiders.multithreading.resource.Account;
 
 public class Wife extends Thread {
-
 	private Account account;
 
 	public Wife(Account account) {

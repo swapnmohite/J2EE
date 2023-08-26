@@ -8,33 +8,14 @@ import javax.persistence.Persistence;
 import com.jspiders.hibernate1.dto.EmployeeDTO;
 
 public class EmployeeDAO {
-	private static EntityManagerFactory emf;
-	private static EntityManager em;
+	private static EntityManagerFactory entityManagerfactory;
+	private static EntityManager entityManager;
 	private static EntityTransaction transaction;
 
-	public static void main(String[] args) {
-		emf = Persistence.createEntityManagerFactory("employee");
-
-		try {
-			openConnection();
-			EmployeeDTO employee = new EmployeeDTO();
-			employee.setId(1);
-			employee.setName("John Doe");
-			employee.setEmail("john.doe@example.com");
-			employee.setContact(1234567890L);
-			employee.setAddress("123 Main Street");
-			em.persist(employee);
-			transaction.commit();
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			closeConnection();
-		}
-	}
-
 	private static void openConnection() {
-		em = emf.createEntityManager();
-		transaction = em.getTransaction();
+		entityManagerfactory = Persistence.createEntityManagerFactory("employee");
+		entityManager = entityManagerfactory.createEntityManager();
+		transaction = entityManager.getTransaction();
 		transaction.begin();
 	}
 
@@ -44,11 +25,30 @@ public class EmployeeDAO {
 				transaction.rollback();
 			}
 		}
-		if (em != null) {
-			em.close();
+		if (entityManager != null) {
+			entityManager.close();
 		}
-		if (emf != null) {
-			emf.close();
+		if (entityManagerfactory != null) {
+			entityManagerfactory.close();
+		}
+	}
+
+	public static void main(String[] args) {
+
+		try {
+			openConnection();
+			EmployeeDTO employee = new EmployeeDTO();
+			employee.setId(1);
+			employee.setName("John Doe");
+			employee.setEmail("john.doe@example.com");
+			employee.setContact(1234567890L);
+			employee.setAddress("123 Main Street");
+			entityManager.persist(employee);
+			transaction.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			closeConnection();
 		}
 	}
 

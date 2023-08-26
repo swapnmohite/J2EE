@@ -21,7 +21,5 @@ public class ByteStreamWrite {
 			System.out.println("Data written to the file");
 			fileOutputStream.close();
 		}
-
 	}
-
 }
