@@ -16,14 +16,16 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jspiders.hibernate1.dto.Aadharcard"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.jspiders.springcore.Bean.StudentConfig"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="com.jspiders.springcore.beans.StudentBean"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcore.config.EmployeeConfig"/>
+    <fullyQualifiedTypeName name="com.jspiders.springcore.beans.EmployeeBean"/>
 </qualifiedTypeNameHistroy>
