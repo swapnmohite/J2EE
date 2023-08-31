@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="com.jspider.Filehandling.operations.DeleteFile"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jspiders.hibernate1.dto.Aadharcard"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.jspiders.springcore.Bean.StudentConfig"/>
     <fullyQualifiedTypeName name="com.jspiders.springcore.beans.StudentBean"/>
@@ -28,4 +27,8 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="com.jspiders.springcore.config.EmployeeConfig"/>
     <fullyQualifiedTypeName name="com.jspiders.springcore.beans.EmployeeBean"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>
