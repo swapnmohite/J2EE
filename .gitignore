@@ -1,1 +1,5 @@
-/.metadata/
+.vscode/
+.metadata/
+*.swp
+*.swo
+*.log
