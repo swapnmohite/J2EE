@@ -1,8 +1,0 @@
-package cpm.jspiders.springmvc.controller;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class StudentController {
-
-}

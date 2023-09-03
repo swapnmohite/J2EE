@@ -2,11 +2,11 @@ package com.jspiders.servlet.servlets;
 
 import java.io.IOException;
 
-import jakarta.servlet.GenericServlet;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
-import jakarta.servlet.annotation.WebServlet;
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/MyServlet1")
 public class MyServlet1 extends GenericServlet {
