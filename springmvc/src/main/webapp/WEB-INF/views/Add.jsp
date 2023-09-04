@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<% String msg=(String) request.getAttribute("msg"); %>
 <jsp:include page="NavBar.jsp" />
 <!DOCTYPE html>
 <html>
@@ -31,24 +32,32 @@ legend {
 				<table>
 					<tr>
 						<td>Name</td>
-						<td><input type="text" name=""></td>
+						<td><input type="text" name="name"></td>
 					</tr>
 					<tr>
 						<td>Email</td>
-						<td><input type="text" name=""></td>
+						<td><input type="text" name="email"></td>
 					</tr>
 					<tr>
 						<td>Contact</td>
-						<td><input type="text" name=""></td>
+						<td><input type="text" name="contact"></td>
 					</tr>
 					<tr>
 						<td>Address</td>
-						<td><input type="text" name=""></td>
+						<td><input type="text" name="address"></td>
 					</tr>
 				</table>
 				<input type="submit" value="ADD">
 			</form>
 		</fieldset>
+		<%
+		if (msg != null) {
+		%>
+		<h1><%=msg%>
+		</h1>
+		<%
+		}
+		%>
 	</div>
 </body>
 </html>

@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div align="center">
-		<h1>WELCOME TO THE SPRING MVC APPLICATION</h1>
+		<h1>WELCOME TO THE SPRING MVC HOME APPLICATION</h1>
 	</div>
 
 </body>
