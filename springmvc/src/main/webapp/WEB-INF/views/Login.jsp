@@ -6,6 +6,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
+body{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
 fieldset table {
 	margin: auto;
 	text-align: left;
