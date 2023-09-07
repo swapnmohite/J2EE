@@ -20,7 +20,7 @@ fieldset table {
 }
 
 fieldset {
-	margin: 15px 520px;
+	/*margin: 15px 520px;*/
 	text-align: center;
 }
 
@@ -44,7 +44,7 @@ legend {
 		%>
 		<fieldset>
 			<legend>Login Page</legend>
-			<form action="./home">
+			<form action="./login" method="post">
 				<table>
 					<tr>
 						<td>Username</td>

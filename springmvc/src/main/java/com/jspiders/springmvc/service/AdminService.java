@@ -22,4 +22,8 @@ public class AdminService {
 		return pojo;
 	}
 
+	public AdminPOJO login(String username, String password) {
+		AdminPOJO pojo = repository.login(username, password);
+		return pojo;
+	}
 }

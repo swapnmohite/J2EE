@@ -19,7 +19,7 @@ fieldset table {
 	text-align: left;
 }
 fieldset {
-	margin: 15px 520px;
+	/*margin: 15px 520px;*/
 	text-align: center;
 }
 legend {
