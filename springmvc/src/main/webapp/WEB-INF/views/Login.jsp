@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%
+String msg = (String) request.getAttribute("msg");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,6 +33,15 @@ legend {
 <body>
 
 	<div align="center">
+	<%
+		if (msg != null) {
+		%>
+		<h4>
+			<%=msg%>
+		</h4>
+		<%
+		}
+		%>
 		<fieldset>
 			<legend>Login Page</legend>
 			<form action="./home">
@@ -47,6 +59,8 @@ legend {
 			</form>
 
 		</fieldset>
+		<a href="http://localhost:8080/springmvc/createAccount">Create
+			Account</a>
 	</div>
 
 </body>
