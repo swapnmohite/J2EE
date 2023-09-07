@@ -45,7 +45,6 @@ INDEX VERSION 1.134+D:\WEJA2\.metadata\.plugins\org.eclipse.jdt.core
 589305851.index
 2333012380.index
 94452296.index
-485642199.index
 801547989.index
 744540886.index
 444369813.index
