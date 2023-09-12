@@ -80,7 +80,6 @@
 </head>
 <body>
     <h1 align="center">Display Data</h1>
-
     <table align="center" border="1">
         <tr>
             <th>Name</th>

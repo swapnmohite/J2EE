@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.jspiders.springmvc.pojo.AdminPOJO;
 import com.jspiders.springmvc.service.AdminService;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class AdminController {
 
 	@Autowired
 	private AdminService service;
 
-	// just explaining
 	// Create Account Page Controller
 	@GetMapping("/createAccount")
 	public String createAccountPage(ModelMap map) {
@@ -47,10 +48,13 @@ public class AdminController {
 
 	// Login Controller
 	@PostMapping("/login")
-	public String login(@RequestParam String username, @RequestParam String password, ModelMap map) {
+	public String login(@RequestParam String username, @RequestParam String password, ModelMap map,
+			HttpSession session) {
 		AdminPOJO pojo = service.login(username, password);
 		// Success
 		if (pojo != null) {
+			session.setAttribute("login", pojo);
+			session.setMaxInactiveInterval(10);
 			return "Home";
 		}
 		map.addAttribute("msg", "Invalid username or password..!");
@@ -59,8 +63,10 @@ public class AdminController {
 
 	// Logout Controller
 	@GetMapping("/logout")
-	public String logout(ModelMap map) {
+	public String logout(ModelMap map, HttpSession session) {
+		session.invalidate();
 		map.addAttribute("msg", "Logged out successfully..!");
 		return "Login";
 	}
+
 }

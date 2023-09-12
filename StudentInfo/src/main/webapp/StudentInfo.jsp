@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*,java.util.*" %>
+
 <jsp:include page="StudentInfo.html"></jsp:include>
 
 <%
@@ -7,9 +8,11 @@
     String email = request.getParameter("email");
     String address = request.getParameter("address");
     long contact = Long.parseLong(request.getParameter("contact"));
+    
     String jdbcUrl = "jdbc:mysql://localhost:3306/studentinfo";
     String dbUsername = "root";
     String dbPassword = "root";
+    
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection(jdbcUrl, dbUsername, dbPassword);
@@ -22,7 +25,8 @@
         preparedStatement.executeUpdate();
         preparedStatement.close();
         connection.close();
-    } catch (Exception e) {
+    }
+    catch (Exception e) {
         e.printStackTrace();
     }
 %>
