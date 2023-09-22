@@ -3,7 +3,7 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
-	<display-name>springmvc</display-name>
+	<display-name>REST</display-name>
 	<welcome-file-list>
 	<welcome-file>/WEB-INF/views/Login.jsp</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
