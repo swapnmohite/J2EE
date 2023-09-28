@@ -16,8 +16,6 @@ public class AdminRepository {
 	private static EntityManagerFactory factory;
 	private static EntityManager manager;
 	private static EntityTransaction transaction;
-//	private static Query query;
-//	private static String jpql;
 
 	private static void openConnection() {
 		factory = Persistence.createEntityManagerFactory("REST");
